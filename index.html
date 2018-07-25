@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Fontamaing</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/javascript.js"></script>
+  <!-- search-component start -->
+  <template id="searchTemplate">
+    <header>
+      <div id="logo">logo</div>
+        <input id="search_bar" type="text" v-model="fontsearch" placeholder="Please write." v-on:keyup="keyupEvent" />
+      </div>
+    </header>
+  </template>
+  <script type="text/javascript">
+    Vue.component('search-component', {
+      template: '#searchTemplate',
+      data: function(){
+        return {fontsearch: ''}
+      },
+      methods: {
+        keyupEvent: function(e){
+          var val = e.target.value;
+          this.$emit('search', val);
+        }
+      }
+    })
+  </script>
+  <!-- search-component end -->
+  <!-- list-component start -->
+  <template id="listTemplate">
+    <div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+      <div class="font_box">
+        <span>{{font}}</span>
+      </div>
+    </div>
+  </template>
+  <script type="text/javascript">
+    Vue.component('list-component',{
+      template: '#listTemplate',
+      props: ['font']
+    })
+  </script>
+  <!-- list-component end -->
+  <!-- search-list-component start -->
+    <template id="searchlistTemplate">
+      <div>
+        <search-component v-on:search="searchEvent"></search-component>
+        <list-component v-bind:font="fontfind"></list-component>
+      </div>
+    </template>
+    <script type="text/javascript">
+      Vue.component('search-list-component',{
+        template: '#searchlistTemplate',
+        data: function(){
+          return {fontfind: ''}
+        },
+        methods: {
+          searchEvent: function(fontsearch){
+            this.fontfind = fontsearch;
+          }
+        }
+      })
+    </script>
+  <!-- search-list component end -->
+</head>
+<body>
+  <div id="app">
+    <search-list-component></search-list-component>
+  </div>
+  <script type="text/javascript">
+    Vue.config.devtools = true;
+    var app = new Vue({
+      el: '#app'
+    })
+  </script>
+</body>
+</html>

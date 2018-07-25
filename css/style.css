@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Gaegu|Gothic+A1|Kirang+Haerang|Nanum+Brush+Script|Nanum+Gothic|Nanum+Gothic+Coding|Nanum+Myeongjo|Nanum+Pen+Script|Poor+Story|Sunflower:300');
+
+header {width: 100%; height: 100px;}
+#logo {width:20%; height: 50px; margin: 20px 25px; float: left; background: #aaa;}
+#search_bar {margin: 30px 17.5%; float: left; font-size: 26px; font-family: 'Nanum Gothic', sans-serif;}
+
+.font_box {float: left;}
+.font_box:nth-child(1) {width: 30%; height: 200px; background: #ff0000; font-family: 'Black Han Sans', sans-serif;}
+.font_box:nth-child(2) {width: 50%; height: 200px; background: #ffc400; font-family: 'Nanum Gothic', sans-serif;}
+.font_box:nth-child(3) {width: 20%; height: 400px; background: #fbff00; float: right; font-family: 'Sunflower', sans-serif;}
+.font_box:nth-child(4) {width: 20%; height: 400px; background: #88ff00; font-family: 'Nanum Myeongjo', serif;}
+.font_box:nth-child(5) {width: 30%; height: 200px; background: #00ff15; font-family: 'Kirang Haerang', cursive;}
+.font_box:nth-child(6) {width: 30%; height: 200px; background: #00ff9d; font-family: 'Gaegu', cursive;}
+.font_box:nth-child(7) {width: 30%; height: 400px; background: #00eeff; float: right; font-family: 'Do Hyeon', sans-serif;}
+.font_box:nth-child(8) {width: 10%; height: 200px; background: #003cff; float: right; font-family: 'Nanum Pen Script', cursive;}
+.font_box:nth-child(9) {width: 20%; height: 200px; background: #2f00ff; float: right; font-family: 'Nanum Gothic Coding', monospace;}
+.font_box:nth-child(10) {width: 20%; height: 200px; background: #d400ff; font-family: 'Nanum Brush Script', cursive;}
+.font_box:nth-child(11) {width: 40%; height: 200px; background: #ff0062; float: right; font-family: 'Poor Story', cursive;}
+.font_box:nth-child(12) {width: 30%; height: 200px; background: #ff70c3; font-family: 'Gothic A1', sans-serif;}
+.font_box span {font-size: 40px;}
