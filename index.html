@@ -3,6 +3,8 @@
 
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>Fontamaing</title>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   <link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -13,8 +15,9 @@
   <template id="searchTemplate">
     <header>
       <img id="main_logo" src="img/main_logo.png" alt="main_logo">
-      <input id="check_box" type="checkbox" />
+      <input id="check_box" type="checkbox" /><span>only korea</span>
       <input id="search_bar" type="text" v-model="fontsearch" placeholder="Please write." v-on:keyup="keyupEvent" />
+      <input id="research_btn" type="button" />
     </header>
   </template>
   <script type="text/javascript">
@@ -22,8 +25,7 @@
       template: '#searchTemplate',
       data: function() {
         return {
-          fontsearch: '',
-          set1 : false
+          fontsearch: ''
         }
       },
       methods: {
