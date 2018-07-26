@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <title>Fontamaing</title>
@@ -11,19 +12,22 @@
   <!-- search-component start -->
   <template id="searchTemplate">
     <header>
-      <div id="logo">logo</div>
-        <input id="search_bar" type="text" v-model="fontsearch" placeholder="Please write." v-on:keyup="keyupEvent" />
-      </div>
+      <img id="main_logo" src="img/main_logo.png" alt="main_logo">
+      <input id="check_box" type="checkbox" />
+      <input id="search_bar" type="text" v-model="fontsearch" placeholder="Please write." v-on:keyup="keyupEvent" />
     </header>
   </template>
   <script type="text/javascript">
     Vue.component('search-component', {
       template: '#searchTemplate',
-      data: function(){
-        return {fontsearch: ''}
+      data: function() {
+        return {
+          fontsearch: '',
+          set1 : false
+        }
       },
       methods: {
-        keyupEvent: function(e){
+        keyupEvent: function(e) {
           var val = e.target.value;
           this.$emit('search', val);
         }
@@ -33,74 +37,60 @@
   <!-- search-component end -->
   <!-- list-component start -->
   <template id="listTemplate">
-    <div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
-      </div>
-      <div class="font_box">
-        <span>{{font}}</span>
+    <div id="content">
+      <div class="font_box" v-for="n in 17">
+        <span class="infor"></span>
+        <span class="example">ABC</span>
+        <span class="font">{{font}}</span>
       </div>
     </div>
   </template>
   <script type="text/javascript">
-    Vue.component('list-component',{
+    Vue.component('list-component', {
       template: '#listTemplate',
       props: ['font']
     })
   </script>
   <!-- list-component end -->
+  <!-- footer-component start -->
+  <template id="footerTemplate">
+    <footer>
+      <span>© 2018 Fontamaing, Inc.</span>
+      <img id="sub_logo" src="img/sub_logo.png" alt="sub_logo">
+    </footer>
+  </template>
+  <script type="text/javascript">
+    Vue.component('footer-component', {
+      template: '#footerTemplate'
+    })
+  </script>
+  <!-- footer-component end -->
   <!-- search-list-component start -->
-    <template id="searchlistTemplate">
-      <div>
-        <search-component v-on:search="searchEvent"></search-component>
-        <list-component v-bind:font="fontfind"></list-component>
-      </div>
-    </template>
-    <script type="text/javascript">
-      Vue.component('search-list-component',{
-        template: '#searchlistTemplate',
-        data: function(){
-          return {fontfind: ''}
-        },
-        methods: {
-          searchEvent: function(fontsearch){
-            this.fontfind = fontsearch;
-          }
+  <template id="searchlistTemplate">
+    <div>
+      <search-component v-on:search="searchEvent"></search-component>
+      <list-component v-bind:font="fontfind"></list-component>
+      <footer-component></footer-component>
+    </div>
+  </template>
+  <script type="text/javascript">
+    Vue.component('search-list-component', {
+      template: '#searchlistTemplate',
+      data: function() {
+        return {
+          fontfind: ''
         }
-      })
-    </script>
+      },
+      methods: {
+        searchEvent: function(fontsearch) {
+          this.fontfind = fontsearch;
+        }
+      }
+    })
+  </script>
   <!-- search-list component end -->
 </head>
+
 <body>
   <div id="app">
     <search-list-component></search-list-component>
@@ -112,4 +102,5 @@
     })
   </script>
 </body>
+
 </html>

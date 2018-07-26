@@ -1,20 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans|Do+Hyeon|Gaegu|Gothic+A1|Kirang+Haerang|Nanum+Brush+Script|Nanum+Gothic|Nanum+Gothic+Coding|Nanum+Myeongjo|Nanum+Pen+Script|Poor+Story|Sunflower:300');
+@import url('https://fonts.googleapis.com/css?family=Black+And+White+Picture|Black+Han+Sans|Cute+Font|Do+Hyeon|Dokdo|East+Sea+Dokdo|Gaegu|Gamja+Flower|Gothic+A1|Gugi|Hi+Melody|Jua|Kirang+Haerang|Nanum+Brush+Script|Nanum+Gothic|Nanum+Gothic+Coding|Nanum+Myeongjo|Nanum+Pen+Script|Poor+Story|Song+Myung|Stylish|Sunflower:300|Yeon+Sung');
+@import url('https://fonts.googleapis.com/css?family=Anton|Arimo|Bitter|Cabin|Crimson+Text|Do+Hyeon|Dosis|Eczar|Fira+Sans|Gaegu|Hanalei+Fill|Inconsolata|Indie+Flower|Josefin+Sans|Kirang+Haerang|Lato|Lora|Merienda|Merriweather|Montserrat|Muli|Nanum+Brush+Script|Nanum+Gothic|Nanum+Gothic+Coding|Nanum+Myeongjo|Nanum+Pen+Script|Noto+Sans|Noto+Serif|Nunito|Open+Sans|Open+Sans+Condensed:300|Oswald|Oxygen|PT+Sans|PT+Sans+Narrow|PT+Serif|Playfair+Display|Poppins|Quicksand|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Slabo+27px|Source+Sans+Pro|Sunflower:300|Titillium+Web|Ubuntu|Work+Sans');
 
-header {width: 100%; height: 100px;}
-#logo {width:20%; height: 50px; margin: 20px 25px; float: left; background: #aaa;}
-#search_bar {margin: 30px 17.5%; float: left; font-size: 26px; font-family: 'Nanum Gothic', sans-serif;}
+body {overflow: hidden;}
 
-.font_box {float: left;}
-.font_box:nth-child(1) {width: 30%; height: 200px; background: #ff0000; font-family: 'Black Han Sans', sans-serif;}
-.font_box:nth-child(2) {width: 50%; height: 200px; background: #ffc400; font-family: 'Nanum Gothic', sans-serif;}
-.font_box:nth-child(3) {width: 20%; height: 400px; background: #fbff00; float: right; font-family: 'Sunflower', sans-serif;}
-.font_box:nth-child(4) {width: 20%; height: 400px; background: #88ff00; font-family: 'Nanum Myeongjo', serif;}
-.font_box:nth-child(5) {width: 30%; height: 200px; background: #00ff15; font-family: 'Kirang Haerang', cursive;}
-.font_box:nth-child(6) {width: 30%; height: 200px; background: #00ff9d; font-family: 'Gaegu', cursive;}
-.font_box:nth-child(7) {width: 30%; height: 400px; background: #00eeff; float: right; font-family: 'Do Hyeon', sans-serif;}
-.font_box:nth-child(8) {width: 10%; height: 200px; background: #003cff; float: right; font-family: 'Nanum Pen Script', cursive;}
-.font_box:nth-child(9) {width: 20%; height: 200px; background: #2f00ff; float: right; font-family: 'Nanum Gothic Coding', monospace;}
-.font_box:nth-child(10) {width: 20%; height: 200px; background: #d400ff; font-family: 'Nanum Brush Script', cursive;}
-.font_box:nth-child(11) {width: 40%; height: 200px; background: #ff0062; float: right; font-family: 'Poor Story', cursive;}
-.font_box:nth-child(12) {width: 30%; height: 200px; background: #ff70c3; font-family: 'Gothic A1', sans-serif;}
-.font_box span {font-size: 40px;}
+header {width: 100%; height: 100px; background: #555;}
+#main_logo {height:50px; margin: 25px 7.5%; float: left;}
+#check_box {margin: 40px 5% 0 15%; float: left;}
+#search_bar {margin-top: 30px; float: left; font-size: 26px; font-family: 'Nanum Gothic', sans-serif;}
+
+#content {width: 100%;}
+.font_box {width: 25%; float: left;}
+.font_box:nth-child(1) {width: 50%; background: #eee;}
+.font_box:nth-child(2) {width: 50%; background: #ddd;}
+.font_box:nth-child(3) {background: rgb(230, 230, 230);}
+.font_box:nth-child(4) {background: rgb(220, 220, 220);}
+.font_box:nth-child(5) {background: rgb(210, 210, 210);}
+.font_box:nth-child(6) {background: rgb(200, 200, 200);}
+.font_box:nth-child(7) {float: right; background: rgb(190, 190, 190);}
+.font_box:nth-child(8) {background: rgb(180, 180, 180);}
+.font_box:nth-child(9) {background: rgb(170, 170, 170);}
+.font_box:nth-child(10) {background: rgb(160, 160, 160);}
+.font_box:nth-child(11) {background: rgb(150, 150, 150);}
+.font_box:nth-child(12) {background: rgb(140, 140, 140);}
+.font_box:nth-child(13) {background: rgb(130, 130, 130);}
+.font_box:nth-child(14) {background: rgb(120, 120, 120);}
+.font_box:nth-child(15) {background: rgb(110, 110, 110);}
+.font_box:nth-child(16) {background: rgb(100, 100, 100);}
+.font_box:nth-child(17) {width:50%; background: rgb(90, 90, 90);}
+.font_box .infor {font-size: 30px; font-family: 'Nanum Gothic', sans-serif;}
+.font_box .example {font-size: 30px;}
+.font_box .font {display: block; font-size: 40px;}
+
+footer {width: 100%; height: 50px; background: #222;}
+footer span {width: 30%; margin: 12.5px 5%; float: left; font-size: 14px; color:#fff;}
+#sub_logo {height:25px; margin: 12.5px 9.5%; float: left;}
