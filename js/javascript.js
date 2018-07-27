@@ -34,7 +34,7 @@ $(document).ready(function(){
             $(".font_box").css("height", fontboxht);
             $(".font_box:nth-child(1), .font_box:nth-child(7), .font_box:nth-child(12)").css("height", fontboxht);
         }
-        if ($(window).width() <= 700) {
+        if ($(window).width() <= 800) {
             $("#content").css("height", fontboxht*17);
             $(".font_box").css("height", fontboxht);
             $(".font_box:nth-child(1), .font_box:nth-child(7), .font_box:nth-child(12)").css("height", fontboxht);

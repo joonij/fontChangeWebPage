@@ -68,4 +68,6 @@ footer span {width: 30%; margin: 12.5px 5%; float: left; font-size: 14px; color:
     header span {margin: 15px 10% 0 0; float: left;}
     #search_bar {width: 40%; margin: 15px 6% 0 5%; font-size: 18px;}
     #research_btn {width: 25px; height: 25px; margin-top: 15px;}
+    footer span {width: 50%; margin: 12.5px 0 0 3%;}
+    #sub_logo {height:25px; margin: 12.5px 0 0 0;}
 }
