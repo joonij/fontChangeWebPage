@@ -8,7 +8,7 @@ header {width: 100%; height: 100px; background: #555; font-family: 'Nanum Gothic
 #check_box {margin: 45px 0 0 13%; float: left;}
 header span {margin: 40px 5% 0 0; float: left;}
 #search_bar {margin: 30px 10px 0 0; float: left; font-size: 26px;}
-#research_btn {margin-top: 30px; float: left; border:none; color: #fff;}
+#research_btn {margin-top: 30px; float: left; border:none; color: #fff; font-size: 34px;}
 
 #content {width: 100%;}
 .font_box {width: 25%; float: left;}
@@ -66,8 +66,8 @@ footer span {width: 30%; margin: 12.5px 5%; float: left; font-size: 14px; color:
     #main_logo {height:50px; margin: 25px 0 0 5%; float: left;}
     #check_box {margin: 20px 0 0 5%; float: left;}
     header span {margin: 15px 10% 0 0; float: left;}
-    #search_bar {width: 40%; margin: 15px 6% 0 5%; font-size: 18px;}
-    #research_btn {width: 25px; height: 25px; margin-top: 15px;}
+    #search_bar {width: 40%; margin: 15px 2% 0 5%; font-size: 18px;}
+    #research_btn {margin-top: 15px; font-size: 26px;}
     footer span {width: 50%; margin: 12.5px 0 0 3%;}
     #sub_logo {height:25px; margin: 12.5px 0 0 0;}
 }
